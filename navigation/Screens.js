@@ -14,6 +14,7 @@ import Hubs from "../screens/Hubs";
 import Pro from "../screens/Pro";
 import Profile from "../screens/Profile";
 import Login from "../screens/Login";
+import Logout from "../screens/Logout"
 import Register from "../screens/Register";
 // drawer
 import Menu from "./Menu";
@@ -207,14 +208,14 @@ const AppStack = createDrawerNavigator(
     //     )
     //   })
     // },
-    // Login: {
-    //   screen: Login,
-    //   navigationOptions: navOpt => ({
-    //     drawerLabel: ({ focused }) => (
-    //       <DrawerItem focused={focused} screen="Login" title="Login" />
-    //     )
-    //   })
-    // },
+    Logout: {
+      screen: Logout,
+      navigationOptions: navOpt => ({
+        drawerLabel: ({ focused }) => (
+          <DrawerItem focused={focused} screen="Logout" title="Logout" />
+        )
+      })
+    },
     // Elements: {
     //   screen: ElementsStack,
     //   navigationOptions: navOpt => ({
