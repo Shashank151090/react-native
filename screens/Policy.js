@@ -15,7 +15,7 @@ export default class Policy extends React.Component {
         <StatusBar barStyle="light-content" />
         <Block flex>
           <ImageBackground
-            source={Images.Pro}
+            source={Images.RegisterBackground}
             style={{ flex: 1, height: height, width, zIndex: 1 }}
           />
           <Block space="between" style={styles.padded}>
