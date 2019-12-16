@@ -4,7 +4,8 @@ import {
   ImageBackground,
   Dimensions,
   StatusBar,
-  KeyboardAvoidingView
+  KeyboardAvoidingView,
+  ScrollView
 } from "react-native";
 import { Block, Checkbox, Text, theme } from "galio-framework";
 
@@ -25,6 +26,7 @@ class Register extends React.Component {
         >
           <Block flex middle>
             <Block style={styles.registerContainer}>
+              
               <Block flex={0.25} middle style={styles.socialConnect}>
                 <Text color="#8898AA" size={12}>
                   Sign up with
@@ -57,6 +59,8 @@ class Register extends React.Component {
                 </Block>
               </Block>
               <Block flex>
+              <ScrollView>
+
                 <Block flex={0.17} middle>
                   <Text color="#8898AA" size={12}>
                     Or sign up the classic way
@@ -141,6 +145,7 @@ class Register extends React.Component {
                       <Button
                         style={{ width: 100 }}
                         color="transparent"
+                        onPress={() => navigation.navigate("Policy")}
                         textStyle={{
                           color: argonTheme.COLORS.PRIMARY,
                           fontSize: 14
@@ -163,6 +168,7 @@ class Register extends React.Component {
                 </Block>
                   </KeyboardAvoidingView>
                 </Block>
+                </ScrollView>
               </Block>
             </Block>
           </Block>

@@ -23,6 +23,7 @@ import DrawerItem from "../components/DrawerItem";
 // header for screens
 import Header from "../components/Header";
 import DeviceDetails from "../screens/Device-details";
+import Policy from "../screens/Policy";
 
 const transitionConfig = (transitionProps, prevTransitionProps) => ({
   transitionSpec: {
@@ -172,6 +173,12 @@ const AppStack = createDrawerNavigator(
     },
     Pro: {
       screen: Pro,
+      navigationOptions: {
+        drawerLabel: () => {}
+      },
+    },
+    Policy: {
+      screen: Policy,
       navigationOptions: {
         drawerLabel: () => {}
       },
